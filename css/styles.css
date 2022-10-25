@@ -244,10 +244,15 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: .5rem;
+    align-items: center;
+    justify-content: center;
 }
 .paradox-menu-item-link {
     text-decoration: none;
     color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .paradox-menu-item-content {
     margin: 1rem;
