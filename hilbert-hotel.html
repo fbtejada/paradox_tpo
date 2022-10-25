@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Penrose_acs.png">
+
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="https://kit.fontawesome.com/c34970a2c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/paradox.css">
+    <title>El Hotel de Hilbert</title>
+</head>
+
+<body>
+    <header id="idheader">
+    </header>
+
+    <main>
+        <div id="paradox-introduction" class="paradox-clear paradox-responsive">
+            <div id="paradox-introduction-text" class="paradox-clear-text">
+                <h1>Introducción:</h1>
+                <p>Aclaración: en esta paradoja cuando hablemos de un número infinito de cosas estatemos hablando de tantas como números naturales. Los números naturales son: \( \mathbb{N} = \{1, 2, 3,\dotsb \} \).</p>
+                <p>En la paradoja de Hilbert del Gran Hotel se supone que se tiene un hotel con infinitas habitaciones (tantas como números naturales). Se supone además que está completamente lleno, es decir, cada una de esas habitaciones está ocupada por huéspedes.</p>
+                <p>¿Qué pasaría entonces si llegaran más huéspedes? Si llegara \(1\), o \(5\), o \(10\), o \(n\), o incluso infinitos. ¿Sería posible acomodarlos a todos en una habitacíon vacía para cada uno de ellos?</p>
+                <p>La respuesta obvia sería que no, dado que no hay habitaciones vacías.</p>
+            </div>
+            <div id="paradox-introduction-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/600px-Hilbert's_Hotel.png" alt="Banach-Tarski">
+            </div>
+        </div>
+        <div id="paradox-comentary" class="paradox-dark paradox-responsive">
+            <div id="paradox-comentary-text" class="paradox-dark-text">
+                <h1>Comentario: </h1>
+                <p>En realidad tal como se lo planteó en la introducción este es un razonamiento falso (que no se pueda). El mismo proviene de usar el sentido común y asumir que eso vale para conjuntos infinitos, para así concluir que no es posible.</p>
+            </div>
+            <!-- <div id="paradox-comentary-image" class="paradox-dark-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <div id="paradox-proof" class="paradox-clear paradox-responsive">
+            <div id="paradox-proof-text" class="paradox-clear-text">
+                <h1>Solución:</h1>
+                <p>En principio supongamos que llega sólo un huésped más. Le vamos a pedir al huésped de la habitación \(1\) que se mueva a la \(2\). Al que estaba originalmente en la \(2\) que se mueva a la \(3\). Y así sucesivamente al de la habitacíon \(n\)-ésima que se mueva a la habitación \(n+1\)-ésima. Es decir, cada uno a la habitación siguiente. Notemos ahora que la habitación \(1\) ha quedado vacía, podemos alojar ahí a nuestro recién llegado. El hotel ha quedado lleno nuevamente ¡pero ningún huésped se ha quedado afuera! Lo que acabamos de ver es una característica particular de los conjuntos infinitos: el todo puede ser igual a la parte propia. De hecho esta propiedad podría ser la definición de conjunto infinito.</p>
+                <p>En este momento resulta claro que repitiendo el proceso anterior varias veces podríamos acomodar cualquier número finito de huéspedes que llegaran.</p>
+                <p>¿Pero qué pasaría si llegaran infinitos huéspedes? ¿Cómo podríamos hacer?</p>
+                <p>Supongamos ahora que llegan infinitos huéspedes, es decir tantos como números naturales. Hagamos primero un poco de lugar en nuestro hotel totalmente lleno, ¡pero sin dejar a nadie afuera! Bueno, no sólo un poco, sino ¡infinito lugar! Pidámosle al huésped de la habitación \(1\) que se mueva a la \(2\). Al que estaba originalmente en la \(2\) que se mueva a la \(4\). Al que estaba originalmente en la \(3\) que se mueva a la \(6\). Y así sucesivamente. Es decir, cada uno a la habitación cuyo número es el doble de la que actualmente tiene. ¡Notemos que ahora nos han quedado todas las habitaciones impares vacías! ¡Es decir hemos hecho en nuestro hotel infinito lugar sin dejar a nadie afuera! Ahora acomodemos a los infinitos recién llegados: al \( 1^\text{er} \) huésped mandémoslo a la habitación \(1\). Al \( 2^\text{do} \) mandémoslo a la habitación \(3\). Al \( 3^\text{ro} \) mandémoslo a la habitación \(5\). Al \( 4^\text{to} \) mandémoslo a la habitación \(7\). Y así sucesivamente, es decir mandamos al huésped \(n\)-avo a la habitación \(2n-1\)-ésima. El hotel ha quedado lleno nuevamente ¡pero ningún huésped se ha quedado afuera!</p>
+                <p>Moraleja, ¡hay que tener cuidado cuando se usa el sentido común! Sobre todo para tratar cualquier tema donde uno no tenga experiencia o ¡la experiencia que tenga sea extrapolada! El problema es que puede ser difícil o imposible decirle a un ser humano que está equivocado cuando piensa que tiene razón y todo lo que siente es que obviamente tiene razón.</p>
+                
+            </div>
+            <!-- <div id="paradox-proof-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos paradox-responsive">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Para una visualización sencilla de lo que está pasando puede verse el video:</p>
+                <div class="paradox-videos-div-iframe">
+                    <iframe class="responsive-iframe" width="727" height="409" src="https://www.youtube.com/embed/s86-Z-CbaHA"
+                    title="The Banach–Tarski Paradox" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen> </iframe>
+                </div>
+                <p>Si quiere ir a Banach-Tarski directamente puede saltar al minuto 11:30.</p>
+            </div>
+            <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+    </main>
+
+    <footer id="idfooter">
+    </footer>
+
+    <script src="./js/header-footer.js"></script>
+    <script src="./js/weather_v2.js"></script>
+</body>
+
+</html>

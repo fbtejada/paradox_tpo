@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Penrose_acs.png">
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="https://kit.fontawesome.com/c34970a2c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/paradox.css">
+
+    <title>Banach-Tarski</title>
+</head>
+
+<body>
+    <header id="idheader">
+    </header>
+
+    <main>
+        <div id="paradox-introduction" class="paradox-clear paradox-responsive">
+            <div id="paradox-introduction-text" class="paradox-clear-text">
+                <h1>Introducción:</h1>
+                <p>La paradoja de Banach-Tarski en realidad es un teorema. Es un razonamiento válido. Es de tipo
+                    geométrico.</p>
+                <p>Se trata de descomponer una bola (sólida) en finitos pedazos, para luego con los mismos armar dos
+                    bolas exactamente iguales a la original.</p>
+                <p>Se la llama paradoja únicamete porque es contrario a la intuición que eso se pueda hacer. Sobre todo
+                    para el lector no inclinado hacia las matemáticas.</p>
+                <p>Duplicar una bola símplemente cortándola en pedazos y moviéndola mediante rotaciones y traslaciones
+                    sin estirarlas, contraerlas o doblarlas y sin agregar nuevos puntos parece imposible. Pero no hay
+                    ningún truco.</p>
+                <p>De hecho la demostración especifica cuales son los pedazos en los que hay que dividir la bola
+                    original y como con ellos armar las dos copias.</p>
+                <p>En un paper publicado el 1924 <a href="https://en.wikipedia.org/wiki/Stefan_Banach"
+                        target="_blank" rel="noopener">Stefan Banach</a> y <a href="https://en.wikipedia.org/wiki/Alfred_Tarski"
+                        target="_blank" rel="noopener">Alfred Tarski</a> dieron una construcción de una descomposición de esa índole.
+                </p>
+            </div>
+            <div id="paradox-introduction-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/Banach-Tarski_Paradox.svg.png" alt="Banach-Tarski">
+            </div>
+        </div>
+        <div id="paradox-comentary" class="paradox-dark paradox-responsive">
+            <div id="paradox-comentary-text" class="paradox-dark-text">
+                <h1>Comentario: </h1>
+                <p>Quiero aclarar que las dos copias se arman con los pedazos extraidos de la original. ¡No se agrega
+                    nada! Eso es lo que lo vuelve sorprendente. No es como cuando se saca una fotocopia y se agrega
+                    papel y toner para poder hacerlo.</p>
+                <p>Si Ud. está pensando que el autor de esta página se fumó o tomó algo muy fuerte para estar diciendo
+                    estas pavadas obviamente imposibles, entoces tiene la actitud correcta y necesaria, aunque en este
+                    caso estaría equivocado.</p>
+                <p>El "secreto" yace en que los pedazos en los que se corta la bola original son conjuntos no medibles
+                    (Lebesgue). Lo que signifca que no es posible asignarles volumen de una manera coherente.</p>
+                <p>Esto posibilita que no pueda hacerse la objeción obvia que sería: "Eso no se puede hacer puesto que
+                    la suma del volumen de los pedazos sería por una parte igual al volumen de la bola original y por
+                    otra seria igual al doble de ese volumen, lo que es absurdo."</p>
+            </div>
+            <div id="paradox-comentary-image" class="paradox-dark-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div>
+        <div id="paradox-proof" class="paradox-clear paradox-responsive">
+            <div id="paradox-proof-text" class="paradox-clear-text">
+                <h1>Demostración: </h1>
+                <p>Lamentablemente la demostración es un poco técnica como para una mente no matemática(utiliza grupos
+                    libres). Pero voy a intentar contar algo.</p>
+                <p>Voy a seguir los lineamientos que se muestran en el artículo: <a
+                        href="https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox#A_sketch_of_the_proof"
+                        target="_blank" rel="noopener">Tarski paradox A sketch of the proof</a> para tratar de mostrar un bosquejo de
+                    la demostración.</p>
+                <h4>Plan:</h4>
+                <ol>
+                    <li>Encontrar una descomposición paradógica del grupo libre en dos generadores \(F_2\).</li>
+                    <li>Encontrar un grupo de rotaciones en el espacio tridimensional isomorfo a \(F_2\).</li>
+                    <li>Usar la descomposición paradógica de ese grupo encontrada en el paso 1 para producir una
+                        descomposición paradógica de la esfera unitaria (de radio 1) hueca.</li>
+                    <li>Extender la descomposición de la esfera (cáscara) a la bola unitaria sólida.</li>
+                </ol>
+                <p></p>
+                <p></p>
+                <h4>Paso 1:</h4>
+                <p>El grupo libre \(F_2\) en 2 generadores \(a\) y \(b\) consiste en todas las cadenas (strings) finitas
+                    formadas por los 4 símbolos \(a, a^{-1}, b, b^{-1}\) tales que \(a\) no aparece junto a \(a^{-1}\),
+                    ni \(b\) junto a \(b^{-1}\). Incluimos aquí la cadena vacía que denotamos con \(e\).</p>
+                <p>Definimos en \(F_2\) una operación de tal manera que a 2 cadenas les corresponde el resultado de
+                    primero concatenarlas en el órden dado y luego para que el resultado vuelva a caer en F2 reducir
+                    dicha concatenación eliminando repetidamente los pares \(aa^{-1}, a^{-1}a, bb^{-1}\) y \(b^{-1}b\).
+                </p>
+                <p>Se puede ver que con esa operación \(F_2\) forma un <a
+                        href="https://en.wikipedia.org/wiki/Group_(mathematics)" target="_blank" rel="noopener">grupo</a>.</p>
+                <p>Denotamos por \(S(a)\) a las cadenas de \(F_2\) que comienzan con a. De manera similar definimos:
+                    \(S(a^{−1}), S(b)\) y \(S(b^{−1})\).</p>
+                <p>Cláramente \(F_2=\{e\} \cup S(a) \cup S(a^{-1}) \cup S(b) \cup \) \( S(b{-1})\). Aquí no dice otra cosa
+                    que: "\(F_2\) está compuesto de la cadena vacía y de las cadenas que comienzan con cada uno de los
+                    cuatro símbolos: \(a, a^{-1}, b, b^{-1}\)."</p>
+                <p>Pero también: \(F_2=aS(a^{-1}) \cup S(a)\) y \(F_2=bS(b^{-1}) \cup S(b)\) (donde \(aS(a^{-1})\)
+                    significa: todas las cadenas de \(S(a^{-1})\) a las cuales se las concatena con \(a\) al principio y
+                    luego se las reduce de manera de eliminar el par \(aa^{-1}\) inicial).</p>
+                <p>Notemos que al grupo \(F_2\) lo cortamos en cuatro pedazos, entonces desplazamos dos de esos pedazos
+                    premultiplicando por \(a\) o \(b\) para luego armarnos dos copias de \(F_2\). Eso es lo que
+                    intentamos hacer con la bola maciza y como desplazar partes de \(F_2\) va a corresponder a rotar un
+                    pedazo de cascarón esférico ya se deja ver hacia donde vamos.</p>
+                <p></p>
+                <h4>Paso 2:</h4>
+                <p>Queremos encontrar un subgrupo de las rotaciones del espacio tridimensional que se comporte como
+                    \(F_2\).</p>
+                <p>Para eso basta encontrar dos rotaciones \(A\) y \(B\) que no tengan relaciones entre ellas ni consigo
+                    mismas. Lo más fácil es tomar \(A\) y \(B\) como rotaciones alrededor de ejes ortogonales, eso
+                    garantizará que no importa cuantas veces aplique \(A\), nunca hará lo mismo que aplicar \(B\) o un
+                    múltiplo de \(B\). Análogamente para \(B\). Pero eso no basta, el ángulo rotado por \(A\) o \(B\)
+                    debe ser múltiplo irracional de \(\pi\), de otra manera habría una potencia de \(A\) (idem para
+                    \(B\)) que daría la identidad. Es decir habría relaciones que no pueden pasar en grupos libres.</p>
+                <p>Así podemos tomar por ejemplo \( \theta = \arccos(1/3) \), \(A\) la rotación de ángulo \(\theta\)
+                    alrededor del eje \(x\) y \(B\) la rotación de ángulo \(\theta\) alrededor del eje \(y\).
+                    Llamamos \(H\) al subgrupo de rotaciones generado por \(A\) y \(B\). Tendríamos que ver que es
+                    libre. Para una idea de como hacerlo ver el artículo citado anteriormente.</p>
+                <p>Las dos rotaciones \(A\) y \(B\) se comportan de manera idéntica a los elementos \(a\) y \(b\) de
+                    \(F_2\) permitiéndonos traducir una cadena de \(F_2\) en una rotación símplemente cambiando \(a\)
+                    por \(A\), \(b\) por \(B\), \(a^{-1}\) por \(A^{-1}\), \(b^{-1}\) por \(B^{-1}\); y viceversa.</p>
+                <p>De esta manera tenemos una descomposición paradójica de \(H\) (la inducida por la de \(F_2\)).</p>
+                <p></p>
+                <h4>Paso 3:</h4>
+                <p>Nuestro grupo \(H\) actúa sobre el cascarón esférico \(S^2\) partiéndolo en órbitas. Dos puntos
+                    pertenecen a la misma órbita si y sólo si existe una rotación de \(H\) que manda el primero en el
+                    segundo.</p>
+                <p>Usamos el axioma de elección para elegir un punto de cada órbita y llamamos al conjunto de puntos
+                    elegidos \(M\).</p>
+                <p>La acción de \(H\) sobre una órbita dada es libre y transitiva, y por lo tanto podemos identificarla
+                    con \(H\); es decir pensar a cada órbita como una copia de \(H\).</p>
+                <p>De esta manera cada punto de \(S^2\) se puede alcanzar de una sola manera elegiendo una rotación
+                    adecuada de \(H\) y un punto adecuado de \(M\).</p>
+                <p>Debido a lo anterior una descomposición de \(H\) en subconjuntos nos da una descomposición de
+                    \(S^2\).</p>
+                <p>Así tenemos la siguiente descomposición de \(S^2\): $$\begin{aligned} A_1&=S(a)M \cup M \cup B \\
+                    A_2&=S(a^{-1})M \setminus B \\ A_3&=S(b)M \\ A4&=S(b^{-1})M \end{aligned}$$</p>
+                <p>donde definimos: \(S(a)M=\{s(x) \mid s \in S(a), x \in M\} \) y análogamente para los demás.</p>
+                <p>y definimos: \(B=a^{-1}M \cup a^{-2}M \cup \dotsb \)</p>
+                <p>No se usó ditectamente la descomposición de \(F_2\) porque dejarían a M como parte extra debido a la
+                    presencia del elemento neutro \(e\) en ellas.</p>
+                <p>La mayoría del cascarón esférico fue dividido en cuatro conjuntos cada uno denso en el cascarón.
+                    Además cuando se rota a dos de ellos el resultado es el doble de lo que se tenía antes:</p>
+                <p>$$\begin{aligned} aA_2&=A_2 \cup A_3 \cup A_4 \\
+                    bA_4&=A_1 \cup A_2 \cup A_4 \end{aligned}$$</p>
+
+                <h4>Paso 4:</h4>
+                <p>Finalmente para tener una partición de la bola maciza se une cada punto del cascarón esférico \(S^2\)
+                    con el centro de la esfera (sin incluir al centro).</p>
+                <p>Todavía hay algunos detalles que aclarar: qué pasa con el punto del centro y con los puntos del
+                    cascarón esférico que son dejados fijos por alguna rotación de \(H\).</p>
+                <p>Debido a que cada rotacion de \(H\) deja exactamente dos puntos fijos del cascáron esférico, el
+                    conjunto de dichos puntos resulta contable (es decir finito o numerable).</p>
+                <p>Para eso el <a
+                        href="https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox#Some_details,_fleshed_out"
+                        target="_blank" rel="noopener">artículo original</a> define la noción de equidescomponible y prueba que \(S^2\)
+                    es equidescomponible con \(S^2 \setminus D\) donde \(D\) es dicho conjunto contable. No vamos a
+                    incluir esto aquí.</p>
+
+            </div>
+            <!-- <div id="paradox-proof-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <div id="paradox-videos" class="paradox-dark paradox-videos">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Para una visualización sencilla de lo que está pasando puede verse el video:</p>
+                <div class="paradox-videos-div-iframe">
+                    <iframe class="responsive-iframe" width="727" height="409" src="https://www.youtube.com/embed/s86-Z-CbaHA"
+                    title="The Banach–Tarski Paradox" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen> </iframe>
+                </div>
+                <p>Si quiere ir a Banach-Tarski directamente puede saltar al minuto 11:30.</p>
+            </div>
+            <!-- <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+    </main>
+
+    <footer id="idfooter">
+    </footer>
+
+    <script src="./js/header-footer.js"></script>
+    <script src="./js/weather_v2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Penrose_acs.png">
+
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="https://kit.fontawesome.com/c34970a2c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/paradox.css">
+    <title>Banach-Tarski</title>
+</head>
+
+<body>
+    <header id="idheader">
+    </header>
+
+    <main>
+        <div id="bibligrafia" class="paradox-clear paradox-responsive">
+            <div id="paradox-introduction-text" class="paradox-clear-text">
+                <h3>Sobre series:</h3>
+                <p>Para Zenon es conveniente algún conocimiento de series como el de algunos cursos de cálculo o mejor aún cualquier curso de análisis matemático. Cualquier libro mas o menos riguroso servirá.</p>
+                <ul class="reference-note">
+                    <li><span>Tom M. Apostol. CALCULUS. VOLUME 1</span></li>
+                    <li><span>Tom M. Apostol. CALCULUS. VOLUME 2</span></li>
+                    <li><span>Tom M. Apostol. Mathematical Analysis, Second Edition.</span></li>
+                </ul>
+                <p></p>
+                <h3>Sobre grupos:</h3>
+                <p>Para Banach Tarski se necesita cierta madurez matemática y algún conocimiento de Algebra abstracta y en especial de grupos y acciones de grupos. También podríamos agregar que sería recomendable tener cierto conocimiento sobre conjuntos infinitos.</p>
+                <ul class="reference-note">
+                    <li><span>David S. Dummit y Richard M. Foote. Abstract Algebra, 3rd Edition.</span></li>
+                    <li><span>Paul Halmos. Naive Set Theory.</span></li>
+                </ul>
+                <p></p>
+                <h3>Sobre probabilidad y estadística:</h3>
+                <p>Para Gender Equality se necesita algún conocimiento sobre probabilidad condicional. Cualquier libro básico no demasiado malo debería servir.</p>
+                <ul class="reference-note">
+                    <li><span>Sheldon Ross. A First Course in Probability, Eighth Edition.</span></li>
+                </ul>
+                <p></p>
+                <h3>Sobre biología:</h3>
+                <ul class="reference-note">
+                    <li><span>Helena Curtis y N. Sue Barnes et. al. Invitación a la Biología en contexto social, 7ma Edición.</span></li>
+                    <li><span>Bruce Alberts et. al. Molecular Biology of the Cell, 7th Edition.</span></li>
+                    <li><span>Charles Darwin. The Origin of Species.</span></li>
+                </ul>
+
+            </div>
+            <!-- <div id="paradox-introduction-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <!-- <div id="paradox-comentary" class="paradox-dark paradox-responsive">
+            <div id="paradox-comentary-text" class="paradox-dark-text">
+                <h1>Comentario: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-comentary-image" class="paradox-dark-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+        <!-- <div id="paradox-proof" class="paradox-clear paradox-responsive">
+            <div id="paradox-proof-text" class="paradox-clear-text">
+                <h1>Demo: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-proof-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos paradox-responsive">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Para una visualización sencilla de lo que está pasando puede verse el video:</p>
+                <div class="paradox-videos-div-iframe">
+                    <iframe class="responsive-iframe" width="727" height="409" src="https://www.youtube.com/embed/s86-Z-CbaHA"
+                    title="The Banach–Tarski Paradox" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen> </iframe>
+                </div>
+                <p>Si quiere ir a Banach-Tarski directamente puede saltar al minuto 11:30.</p>
+            </div>
+            <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+    </main>
+
+    <footer id="idfooter">
+    </footer>
+
+    <script src="./js/header-footer.js"></script>
+    <script src="./js/weather_v2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+https://en.wikipedia.org/wiki/Russell%27s_paradox#Formal_presentation
+Russell's paradox - Wikipedia
+https://en.wikipedia.org/wiki/Axiom_schema_of_specification#Unrestricted_comprehensión
+Axiom schema of specification - Wikipedia
+https://en.wikipedia.org/wiki/Axiom_schema_of_specification#Unrestricted_comprehensión
+Axiom schema of specification - Wikipedia
+https://en.wikipedia.org/wiki/Barber_paradox
+Barber paradox - Wikipedia
+------------------------------------------------------
+Intro:
+La paradoja de Russell se da en lógica matemática. Fue descubierta por Bertrand Russell en 1901.
+
+Cuando uno trata de axiomatizar la matemática una de las cosas que quisiera, es permitir formar el conjunto de las cosas que cumplen cualquier "propiedad razonable".
+
+El problema es que tal como fuera descubierto por Russell si no se ponen límites a esto se llega a una contradición.
+
+Comen:
+El problema de tener una contradición en matemáticas (es decir una afirmación verdadera y falsa) es que de permitirla, se podría demostrar que toda afirmacíon es verdadera y falsa. Lo que derrumbaría el edificio matemático.
+
+Para solucionar esto Russell creó su teoría de tipos.
+
+Otra manera de hacerlo es limitar la creación de conjuntos.
+Para eso se reemplaza el esquema axiomático de comprehensión irrestricta:
+\(\forall w_1,\dotsc ,w_n \  \exists B \ \forall x \left( x \in B \Leftrightarrow \varphi \left( x,w_1,\dotsc,w_n \right) \right) \)
+(que dice que existe el conjunto \(B\) que satisface el predicado \(\varphi\)), por el esquema axiomático de especificación:
+\(\forall w_1,\dotsc ,w_n \ \forall A \ \exists B \ \forall x \left( x \in B \Leftrightarrow \left[ x \in A \wedge \varphi \left( x,w_1,\dotsc,w_n,A \right) \right] \right) \)
+(que dice: dado cualquier conjunto \(A\), existe un conjunto \(B\) tal que dado cualquier conjunto \(x\), \(x\) es un miembro de \(B\) si y sólo si \(x\) es un miembro de \(A\) y \(\varphi\) es verdadera para \(x\)).
+
+Demo:
+Vamos a demostrar que si se acepta comprehensión irrestricta:
+\(\forall w_1,\dotsc ,w_n \  \exists B \ \forall x \left( x \in B \Leftrightarrow \varphi \left( x,w_1,\dotsc,w_n \right) \right) \)
+se llega a una contradicción.
+Para eso tomamos \(\varphi(x)=\neg (x \in x) \), con lo que nos queda: \(B= \{x:\neg (x \in x) \}=\{x: x \notin x \} \).
+Ahora nos preguntamos si \(B \in B \) o si \(B \notin B \) ? Cuál de las dos será verdadera?
+El problema es que si \(B \notin B \), entonces  \(B\) es uno de los \(x\) que forma parte de \(B\) y por lo tanto \(B \in B \). Si nos fijamos bien nos damos cuenta de que la recíproca también vale.
+Entonces se tiene: \((B \in B) \Leftrightarrow (B \notin B) \). Lo que es una contradicción.
+
+

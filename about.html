@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Penrose_acs.png">
+
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="https://kit.fontawesome.com/c34970a2c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/paradox.css">
+    <title>Banach-Tarski</title>
+</head>
+
+<body>
+    <header id="idheader">
+    </header>
+
+    <main>
+        <div id="about" class="paradox-clear paradox-responsive">
+            <div id="paradox-introduction-text" class="paradox-clear-text">
+                <h1>Sobre Paradox:</h1>
+                <p>Es un sitio pensado por Federico para alterar la intuición, redefinir el "sentido común" del visitante, hacerlo pensar de manera un poco más profunda sobre sus creencias personales e invitar al estudio.</p>
+                <p>Para esto utiliza libremente el lenguaje de la matemática. La intención de Paradox no es predigerir todo hablando el lenguaje más amplio posible. Si el lector no conoce determinado tema o no tiene el nivel matemático necesario para comprender una parte, Paradox lo invita a estudiarlo por su cuenta.</p>
+                <p>El sitio no está de ninguna manera terminado. Todo es preliminar, dado que fue hecho rápidamente para cumplir con el TPO de codo a codo. Federico hubiera querido tener más tiempo para escribir todo el contenido de manera original, sobre todo en Banach Tarski donde hubiera querido dar una demostración propia. En definitiva no está listo para su publicación.</p>
+                <p>Federico dudó mucho sobre si dejar o no Gender Equality por miedo a que una versión tan preliminar se pudiera filtrar al público, así que espera que esto no suceda.</p>
+                <p>En Paradox hay explicaciones completamente originales pensadas por Federico como la paradoja de Zenón. Y otras donde se sigue mayormente lo escrito por otros (traduciendo), como en Banach Tarski y otras con secciones de ambos tipos como en Gender Equality.</p>
+                <p>La paradoja de Peto fue escrita por Alejandra.</p>
+                <p>El sitio fue mayormente pensado, diseñado, realizado y dirigido por Federico. Alejandra contribuyó los tres archivos del formulario (HTML, CSS y JS), el esquema de colores del sitio, la paradoja de Peto, imágenes y sobre todo muchas ideas y discusiones que afectaron a todo el sitio. Sólo para dar un pequeño ejemplo: ella propuso rotar el logo en el hover.</p>
+                <p>El sitio contiene imágenes y partes traducidas de otros autores todavía no referenciados.</p>
+                <p></p>
+                <h3>Sobre Federico:</h3>
+                <p>A Federico desde pequeño le ha interesado la matemática, la física, la computación, la ingeniería y la ciencia en general. Es mayormente autodidacta pero agradece a las personas y profesores que le han introducido a cosas nuevas, en especial a su padre y a sus profesores de la FCEN UBA. Le gusta dar explicaciones claras a problemas complicados. Le gusta enseñar a quien quiere aprender.</p>
+                <p></p>
+                <h3>Sobre Alejandra:</h3>
+                <p>Alejandra es licenciada en Biología de la FCEN UBA. Actualmente enseña Biología en colegios secundarios. Siente verdadera pasión por la naturaleza y por enseñar a sus alumnos.</p>
+                <p></p>
+                <h3>Sobre educación:</h3>
+                <p>Ninguno de los dos es partidario de la pedagogía actual que parece estar más interesada en una supuesta "inclusión", "igualdad" y en palabras vagas que en desarrollar la capacidad de estudio y esfuezo de los alumnos. Así muchos colegios secundarios de la Argentina parecen haber sido tomados y estar dirigidos por personas mayormente incompetentes que hablan vaguedades y se dedican a que se apruebe a los alumnos sin importar que no tengan los conocimientos ni la capacidad de esfuerzo necesaria para adquirirlos. Hago la salvedad de que muchas veces estas directivas vienen de arriba, de un ámbito superior mas allá del colegio.</p>
+                <p></p>
+                <h3>Agradecimientos:</h3>
+                <p>Ambos agradecen a Juan Pablo y a todos los que han dedicado su tiempo para que este curso fuera posible. Ninguno de los dos tenía conocimientos previos de HTML, CSS o JS.</p>
+        </div>
+            <!-- <div id="paradox-introduction-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <!-- <div id="paradox-comentary" class="paradox-dark paradox-responsive">
+            <div id="paradox-comentary-text" class="paradox-dark-text">
+                <h1>Comentario: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-comentary-image" class="paradox-dark-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+        <!-- <div id="paradox-proof" class="paradox-clear paradox-responsive">
+            <div id="paradox-proof-text" class="paradox-clear-text">
+                <h1>Demo: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-proof-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos paradox-responsive">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Para una visualización sencilla de lo que está pasando puede verse el video:</p>
+                <div class="paradox-videos-div-iframe">
+                    <iframe class="responsive-iframe" width="727" height="409" src="https://www.youtube.com/embed/s86-Z-CbaHA"
+                    title="The Banach–Tarski Paradox" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen> </iframe>
+                </div>
+                <p>Si quiere ir a Banach-Tarski directamente puede saltar al minuto 11:30.</p>
+            </div>
+            <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+    </main>
+
+    <footer id="idfooter">
+    </footer>
+
+    <script src="./js/header-footer.js"></script>
+    <script src="./js/weather_v2.js"></script>
+</body>
+
+</html>

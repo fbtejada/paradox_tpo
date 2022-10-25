@@ -1,0 +1,24 @@
+----------------------------------------------------------
+Sobre series:
+Para Zenon es conveniente algún conocimiento de series como el de algunos cursos de cálculo o mejor aún cualquier curso de análisis matemático. Cualquier libro mas o menos riguroso servirá.
+
+-Tom M. Apostol. CALCULUS. VOLUME 1
+-Tom M. Apostol. CALCULUS. VOLUME 2
+-Tom M. Apostol. Mathematical Analysis, Second Edition.
+
+
+Sobre grupos:
+Para Banach Tarski se necesita cierta madurez matemática y algún conocimiento de Algebra abstracta y en especial de grupos y acciones de grupos. También podríamos agregar que sería recomendable tener cierto conocimiento sobre conjuntos infinitos.
+
+-David S. Dummit y Richard M. Foote. Abstract Algebra, 3rd Edition.
+-Paul Halmos. Naive Set Theory.
+
+Sobre probabilidad y estadística:
+Para Gender Equality se necesita algún conocimiento sobre probabilidad condicional. Cualquier libro básico no demasiado malo debería servir.
+
+-Sheldon Ross. A First Course in Probability, Eighth Edition.
+
+Sobre biología:
+-Helena Curtis y N. Sue Barnes et. al. Invitación a la Biología en contexto social, 7ma Edición. 
+-Bruce Alberts et. al. Molecular Biology of the Cell, 7th Edition
+-Charles Darwin. The Origin of Species.

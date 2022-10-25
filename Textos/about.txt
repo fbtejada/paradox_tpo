@@ -1,0 +1,34 @@
+----------------------------------------------------------
+Sobre Paradox:
+Es un sitio pensado por Federico para alterar la intuición, redefinir el "sentido común" del visitante, hacerlo pensar de manera un poco más profunda sobre sus creencias personales e invitar al estudio.
+
+Para esto utiliza libremente el lenguaje de la matemática. La intención de Paradox no es predigerir todo hablando el lenguaje más amplio posible. Si el lector no conoce determinado tema o no tiene el nivel matemático necesario para comprender una parte, Paradox lo invita a estudiarlo por su cuenta.
+
+El sitio no está de ninguna manera terminado. Todo es preliminar, dado que fue hecho rápidamente para cumplir con el TPO de codo a codo. Federico hubiera querido tener más tiempo para escribir todo el contenido de manera original, sobre todo en Banach Tarski donde hubiera querido dar una demostración propia. En definitiva no está listo para su publicación.
+
+Federico dudó mucho sobre si dejar o no Gender Equality por miedo a que una versión tan preliminar se pudiera filtrar al público, así que espera que esto no suceda.
+
+En Paradox hay explicaciones completamente originales pensadas por Federico como la paradoja de Zenón. Y otras donde se sigue mayormente lo escrito por otros (traduciendo), como en Banach Tarski y otras con secciones de ambos tipos como en Gender Equality.
+
+La paradoja de Peto fue escrita por Alejandra.
+
+El sitio fue mayormente pensado, diseñado, realizado y dirigido por Federico. Alejandra contribuyó los tres archivos del formulario (HTML, CSS y JS), el esquema de colores del sitio, la paradoja de Peto, imágenes y sobre todo muchas ideas y discusiones que afectaron a todo el sitio. Sólo para dar un pequeño ejemplo: ella propuso rotar el logo en el hover. 
+
+El sitio contiene imágenes y partes traducidas de otros autores todavía no referenciados.
+
+----------------------------------------------------------
+Sobre Federico:
+A Federico desde pequeño le ha interesado la matemática, la física, la computación, la ingeniería y la ciencia en general. Es mayormente autodidacta pero agradece a las personas y profesores que le han introducido a cosas nuevas, en especial a su padre y a sus profesores de la FCEN UBA. Le gusta dar explicaciones claras a problemas complicados. Le gusta enseñar a quien quiere aprender.
+
+Sobre Alejandra:
+Alejandra es licenciada en Biología de la FCEN UBA. Actualmente enseña Biología en colegios secundarios. Siente verdadera pasión por la naturaleza y por enseñar a sus alumnos.
+
+Sobre educación:
+Ninguno de los dos es partidario de la pedagogía actual que parece estar más interesada en una supuesta "inclusión", "igualdad" y en palabras vagas que en desarrollar la capacidad de estudio y esfuezo de los alumnos. Así muchos colegios secundarios de la Argentina parecen haber sido tomados y estar dirigidos por personas mayormente incompetentes que hablan vaguedades y se dedican a que se apruebe a los alumnos sin importar que no tengan los conocimientos ni la capacidad de esfuerzo necesaria para adquirirlos. Hago la salvedad de que muchas veces estas directivas vienen de arriba, de un ámbito superior mas allá del colegio.
+
+Un pais que trata mejor y le paga más al encargado de edificio para que le tire la basura, que a los profesores que instruyen a sus hijos no parece tener un futuro promisorio. Si además gasta poco en ciencia y técnica (medido en porcentaje de PBI) no podrá salir de sus problemas económicos no importa el color de quienes lo dirijan.
+
+Agradecimientos:
+Ambos agradecen a Juan Pablo y a todos los que han dedicado su tiempo para que este curso fuera posible. Ninguno de los dos tenía conocimientos previos de HTML, CSS o JS.
+
+

@@ -1,0 +1,7 @@
+azul claro  c9cbd1
+azul        4e6bdb
+azul oscuro  0f2164
+
+verde claro c4d8d9
+verde =cadetblue 5f9ea0
+verde oscuro 165153

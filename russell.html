@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Penrose_acs.png">
+
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="https://kit.fontawesome.com/c34970a2c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/paradox.css">
+    <title>Russell</title>
+</head>
+
+<body>
+    <header id="idheader">
+    </header>
+
+    <main>
+        <div id="paradox-introduction" class="paradox-clear paradox-responsive">
+            <div id="paradox-introduction-text" class="paradox-clear-text">
+                <h1>Introducción:</h1>
+                <p>La paradoja de Russell se da en lógica matemática. Fue descubierta por Bertrand Russell en 1901.</p>
+                <p>Cuando uno trata de axiomatizar la matemática una de las cosas que quisiera, es permitir formar el
+                    conjunto de las cosas que cumplen cualquier "propiedad razonable".</p>
+                <p>El problema es que tal como fuera descubierto por Russell si no se ponen límites a esto se llega a
+                    una contradición.</p>
+            </div>
+            <div id="paradox-introduction-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/cards_476x268/Bertrand_Russell_transparent_bg_476x268_card.png" alt="Banach-Tarski">
+            </div>
+        </div>
+        <div id="paradox-comentary" class="paradox-dark paradox-responsive">
+            <div id="paradox-comentary-text" class="paradox-dark-text">
+                <h1>Comentario: </h1>
+                <p>El problema de tener una contradición en matemáticas (es decir una afirmación verdadera y falsa) es
+                    que de permitirla, se podría demostrar que toda afirmacíon es verdadera y falsa. Lo que derrumbaría
+                    el edificio matemático.</p>
+                <p>Para solucionar esto Russell creó su teoría de tipos.</p>
+                <p>Otra manera de hacerlo es limitar la creación de conjuntos. Para eso se reemplaza el esquema
+                    axiomático de comprehensión irrestricta:</p>
+                <p>\(\forall w_1,\dotsc ,w_n \  \exists B \ \forall x ( x \in B \Leftrightarrow \) \( \varphi \left( x,w_1,\dotsc,w_n \right) ) \)</p>
+                <p>(que dice que existe el conjunto \(B\) que satisface el predicado \(\varphi\)), por el esquema
+                    axiomático de especificación:</p>
+                <p>\(\forall w_1,\dotsc ,w_n \ \forall A \ \exists B \ \forall x \) \( ( x \in B \Leftrightarrow  \) \( \left[ x \in A \wedge \varphi \left( x,w_1,\dotsc,w_n,A \right) \right] ) \)</p>
+                <p>(que dice: dado cualquier conjunto \(A\), existe un conjunto \(B\) tal que dado cualquier conjunto
+                    \(x\), \(x\) es un miembro de \(B\) si y sólo si \(x\) es un miembro de \(A\) y \(\varphi\) es
+                    verdadera para \(x\)).</p>
+
+            </div>
+            <!-- <div id="paradox-comentary-image" class="paradox-dark-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <div id="paradox-proof" class="paradox-clear paradox-responsive">
+            <div id="paradox-proof-text" class="paradox-clear-text">
+                <h1>Demostración: </h1>
+                <p>Vamos a demostrar que si se acepta comprehensión irrestricta:
+                    \(\forall w_1,\dotsc ,w_n \  \exists B \ \forall x ( x \in B \Leftrightarrow \) \( \varphi \left( x,w_1,\dotsc,w_n \right) ) \)
+                    se llega a una contradicción.</p>
+                <p>Para eso tomamos \(\varphi(x)=\neg (x \in x) \), con lo que nos queda: \(B= \{x:\neg (x \in x)
+                    \}=\{x: x \notin x \} \).</p>
+                <p>Ahora nos preguntamos si ¿ \(B \in B \) o si \(B \notin B \) ? ¿Cuál de las dos será verdadera?</p>
+                <p>El problema es que si \(B \notin B \), entonces \(B\) es uno de los \(x\) que forma parte de \(B\) y
+                    por lo tanto \(B \in B \). Si nos fijamos bien nos damos cuenta de que la recíproca también vale.
+                </p>
+                <p>Entonces se tiene: \((B \in B) \Leftrightarrow (B \notin B) \). Lo que es una contradicción.</p>
+            </div>
+            <!-- <div id="paradox-proof-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos paradox-responsive">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div>
+            <div id="paradox-videos-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div>
+        </div> -->
+    </main>
+
+    <footer id="idfooter">
+    </footer>
+
+    <script src="./js/header-footer.js"></script>
+    <script src="./js/weather_v2.js"></script>
+</body>
+
+</html>

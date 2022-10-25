@@ -1,0 +1,30 @@
+https://en.wikipedia.org/wiki/Hilbert%27s_paradox_of_the_Grand_Hotel
+-----------------------------------------------
+
+Intro:
+Aclaración: en esta paradoja cuando hablemos de un número infinito de cosas estatemos hablando de tantas como números naturales. Los números naturales son: \( \mathbb{N} = \{1, 2, 3,\dotsb \} \).
+En la paradoja de Hilbert del Gran Hotel se supone que se tiene un hotel con infinitas habitaciones (tantas como números naturales). Se supone además que está completamente lleno, es decir, cada una de esas habitaciones está ocupada por huespedes.
+
+¿Qué pasaría entonces si llegaran más huéspedes? Si llegara \(1\), o \(5\), o \(10\), o \(n\), o incluso infinitos. ¿Sería posible acomodarlos a todos en una habitacíon vacía para cada uno de ellos?
+
+La respuesta obvia sería que no, dado que no hay habitaciones vacías.
+
+-----------------------------------------------
+Comentario:
+En realidad tal como se lo planteó en la introducción este es un razonamiento falso (que no se pueda). El mismo proviene de usar el sentido común y asumir que eso vale para conjuntos infinitos, para así concluir que no es posible.
+
+-----------------------------------------------
+Solución:
+En principio supongamos que llega sólo un huésped más. Le vamos a pedir al huésped de la habitación \(1\) que se mueva a la \(2\). Al que estaba originalmente en la \(2\) que se mueva a la \(3\). Y así sucesivamente al de la habitacíon \(n\)-ésima que se mueva a la habitación \(n+1\)-ésima. Es decir, cada uno a la habitación siguiente. Notemos ahora que la habitación \(1\) ha quedado vacía, podemos alojar ahí a nuestro recién llegado. El hotel ha quedado lleno nuevamente ¡pero ningún huésped se ha quedado afuera! Lo que acabamos de ver es una característica particular de los conjuntos infinitos: el todo puede ser igual a la parte propia. De hecho esta propiedad podría ser la definición de conjunto infinito.
+
+En este momento resulta claro que repitiendo el proceso anterior varias veces podríamos acomodar cualquier número finito de huéspedes que llegaran.
+
+¿Pero qué pasaría si llegaran infinitos huéspedes? ¿Cómo podríamos hacer?
+
+Supongamos ahora que llegan infinitos huéspedes, es decir tantos como números naturales. Hagamos primero un poco de lugar en nuestro hotel totalmente lleno, ¡pero sin dejar a nadie afuera! Bueno, no sólo un poco, sino ¡infinito lugar! Pidámosle al huésped de la habitación \(1\) que se mueva a la \(2\). Al que estaba originalmente en la \(2\) que se mueva a la \(4\). Al que estaba originalmente en la \(3\) que se mueva a la \(6\). Y así sucesivamente. Es decir, cada uno a la habitación cuyo número es el doble de la que actualmente tiene. ¡Notemos que ahora nos han quedado todas las habitaciones impares vacías! ¡Es decir hemos hecho en nuestro hotel infinito lugar sin dejar a nadie afuera! Ahora acomodemos a los infinitos recién llegados: al \( 1^\text{er} \) huésped mandémoslo a la habitación \(1\). Al \( 2^\text{do} \) mandémoslo a la habitación \(3\). Al \( 3^\text{ro} \) mandémoslo a la habitación \(5\). Al \( 4^\text{to} \) mandémoslo a la habitación \(7\). Y así sucesivamente, es decir mandamos al huésped \(n\)-avo a la habitación \(2n-1\)-ésima. El hotel ha quedado lleno nuevamente ¡pero ningún huésped se ha quedado afuera!
+
+Moraleja, ¡hay que tener cuidado cuando se usa el sentido común! Sobre todo para tratar cualquier tema donde uno no tenga experiencia o ¡la experiencia que tenga sea extrapolada! El problema es que puede ser difícil o imposible decirle a un ser humano que está equivocado cuando piensa que tiene razón y todo lo que siente es que obviamente tiene razón.
+
+-----------------------------------------------
+
+ 

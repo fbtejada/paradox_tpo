@@ -1,0 +1,33 @@
+Intro:
+La paradoja de Zenón entra dentro del grupo de las llamadas "paradojas del movimiento". La misma trata de probar que es imposible recorrer un camino. 
+Primera versión. Por ejemplo para fijar ideas: qué pasaría si uno tratara de llegar caminando hasta una pared cercana.
+Zenón razona así: primero se debe recorrer la mitad de la distancia. Luego se debe recorrer la mitad de lo que nos queda. Y así sucesivamente...Así nunca alcanzaremos a llegar a la pared dado que siempre nos queda algo por hacer.
+
+Otra versión de la misma paradoja plantea la carrera entre Aquiles y una tortuga a la cual el primero da una cierta ventaja inicial.
+El razonamiento es el siguiente: 
+Para alcanzar a la tortuga primero Aquiles debe llegar hasta donde se encuentra la misma. Pero por más rápido que éste sea, para ese entonces la toruga habrá avanzado un poco más. Este procedimiento se repite una y otra vez...El resultado es que Aquiles nunca podrá alcanzar a la tortuga.
+
+Com:
+Estas paradojas provienen de pensar que hacer infinitas cosas deben necesariamente llevar infinito tiempo. Así subdividen una tarea sencilla en infinitas subtareas y argumentan la imposibilidad de llevarlas a cabo sin decir nada, dando como obvio que no se puede hacer. En definitiva son razonamientos inválidos. Moraleja: cuidado con lo obvio.
+
+Sol:
+La paradoja de Zenón se resuelve facilmente pensando en la serie de tiempos.
+
+Así para recorrer la mitad de la distancia se necesita la mitad del tiempo (si quiere para fijar ideas piense en medio minuto). Para recorrer la mitad de la mitad se necesita la cuarta parte del tiempo...Y asi sucesivamente.
+
+Entonces para hacer los infinitos recorridos se necesitaría: \({1 \over 2} + {1 \over 4} + {1 \over 8} + {1 \over 16} +\dotsb \ \) que es exactamente \(1\), o si lo prefiere \(1\) minuto.
+
+En símbolos, la serie:
+$$ \sum_{n=1}^{\infty} {1 \over {2^n}} = 1 $$
+converge a \(1\).
+                   
+Lo que muestra que la tarea sencilla: "llegar a la pared", si termina (solo lleva 1 minuto) aún si la pensamos subdividida en esas infinitas tareas.
+Entonces podemos concluir que la manera de razonar de Zenón era errónea, asumía una falsedad.
+
+----------------------------------------------------
+MathJax:
+
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+

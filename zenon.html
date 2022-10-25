@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Penrose_acs.png">
+
+    <script>
+        MathJax = {
+            chtml: { displayAlign: 'left' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="https://kit.fontawesome.com/c34970a2c3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/paradox.css">
+    <title>Zenón</title>
+</head>
+
+<body>
+    <header id="idheader">
+    </header>
+
+    <main>
+        <div id="paradox-introduction" class="paradox-clear paradox-responsive">
+            <div id="paradox-introduction-text" class="paradox-clear-text">
+                <h1>Introducción:</h1>
+                <p>La paradoja de Zenón entra dentro del grupo de las llamadas "paradojas del movimiento".</p>
+                <ul>
+                    <li>
+                        <p>Primera versión. Por ejemplo para fijar ideas: qué pasaría si uno tratara de llegar caminando
+                            hasta una pared
+                            cercana.</p>
+                        <p>Zenón razona así: primero se debe recorrer la mitad de la distancia. Luego se debe recorrer
+                            la mitad de lo que nos queda. Y así sucesivamente...Así nunca alcanzaremos a llegar a la
+                            pared dado que siempre nos queda algo por hacer.</p>
+                    </li>
+                    <li>
+                        <p>Otra versión de la misma paradoja plantea la carrera entre Aquiles y una tortuga a la cual el
+                            primero da una cierta ventaja inicial.</p>
+                        <p>El razonamiento es el siguiente:</p>
+                        <p>Para alcanzar a la tortuga primero Aquiles debe llegar hasta donde se encuentra la misma.
+                            Pero por más rápido que éste sea, para ese entonces la toruga habrá avanzado un poco más.
+                            Este procedimiento se repite una y otra vez...El resultado es que Aquiles nunca podrá
+                            alcanzar a la tortuga.</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="paradox-introduction-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/Zenon2.jpg" alt="Banach-Tarski">
+            </div>
+        </div>
+        <div id="paradox-comentary" class="paradox-dark paradox-responsive">
+            <div id="paradox-comentary-text" class="paradox-dark-text">
+                <h1>Comentario: </h1>
+                <p>Estas paradojas provienen de pensar que hacer infinitas cosas deben necesariamente llevar infinito
+                    tiempo. Así subdividen una tarea sencilla en infinitas subtareas y argumentan la imposibilidad de
+                    llevarlas a cabo sin decir nada, dando como obvio que no se puede hacer. En definitiva son
+                    razonamientos inválidos. Moraleja: cuidado con lo obvio.</p>
+            </div>
+            <!-- <div id="paradox-comentary-image" class="paradox-dark-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <div id="paradox-proof" class="paradox-clear paradox-responsive">
+            <div id="paradox-proof-text" class="paradox-clear-text">
+                <h1>Demostración: </h1>
+                <p>La paradoja de Zenón se resuelve facilmente pensando en la serie de tiempos. </p>
+                <p>Así para recorrer la mitad de la distancia se necesita la mitad del tiempo (si quiere para fijar
+                    ideas piense en medio minuto). Para recorrer la mitad de la mitad se necesita la cuarta parte del
+                    tiempo...Y asi sucesivamente.</p>
+                <p>Entonces para hacer los infinitos recorridos se necesitaría: \({1 \over 2} + {1 \over 4} + {1 \over
+                    8} + {1 \over 16} +\dotsb \ \) que es exactamente \(1\), o si lo prefiere \(1\) minuto.</p>
+
+                <p>En símbolos, la serie:
+                    $$ \sum_{n=1}^{\infty} {1 \over {2^n}} = 1 $$
+                    converge a \(1\).</p>
+
+                <p>Lo que muestra que la tarea sencilla: "llegar a la pared", si termina (solo lleva 1 minuto) aún si la
+                    pensamos subdividida en esas infinitas tareas.</p>
+                <p>Entonces podemos concluir que la manera de razonar de Zenón era errónea, asumía una falsedad.</p>
+            </div>
+            <!-- <div id="paradox-proof-image" class="paradox-clear-image paradox-responsive-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+        <!-- <div id="paradox-videos" class="paradox-dark paradox-videos paradox-responsive">
+            <div id="paradox-videos-text" class="paradox-dark-text paradox-videos-text">
+                <h1>Videos: </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit cumque soluta excepturi sapiente
+                    reprehenderit at amet ullam aliquam. Voluptatum id officiis libero, odio animi saepe, quis quam
+                    iure, earum voluptate cupiditate eius placeat iste nemo architecto vel eum quisquam vero porro.
+                    Beatae eius nam quam optio excepturi a maxime incidunt doloremque est nemo nisi laboriosam eos qui
+                    cumque exercitationem sed, alias laborum eligendi atque delectus sit? Alias id ut sunt facilis,
+                    optio et voluptas at impedit totam mollitia quidem illo velit consequatur. Aperiam, fuga. Corrupti
+                    temporibus ratione, neque dicta soluta recusandae eos, saepe vitae rerum, omnis non? Blanditiis,
+                    quas facilis?</p>
+            </div> -->
+        <!-- <div id="paradox-proof-image" class="paradox-dark-image paradox-responsive-image paradox-videos-image">
+                <img src="images/banach-tarski1.jpg" alt="Banach-Tarski">
+            </div> -->
+        </div>
+    </main>
+
+    <footer id="idfooter">
+    </footer>
+
+    <script src="./js/header-footer.js"></script>
+    <script src="./js/weather_v2.js"></script>
+</body>
+
+</html>
+
+<!-- <math display="inline">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>4</mn>
+                        </mfrac>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>8</mn>
+                        </mfrac>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>16</mn>
+                        </mfrac>
+                        <mo>+</mo>...
+                    </math> -->
+
+<!-- <math display="block">
+                        <mrow>
+                            <munderover>
+                                <mo>∑</mo>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mo>=</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mrow>
+                                    <mo>+</mo>
+                                    <mn>∞</mn>
+                                </mrow>
+                            </munderover>
+                            <mfrac>
+                                <mn>1</mn>
+                                <msup>
+                                    <mi>2</mi>
+                                    <mn>n</mn>
+                                </msup>
+                            </mfrac>
+                        </mrow>
+                    </math> -->
+
+<!-- <math display="inline">
+                        <mi>1</mi>
+                    </math>. -->

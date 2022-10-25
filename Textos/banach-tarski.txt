@@ -1,0 +1,117 @@
+https://www.google.com/search?client=firefox-b-d&q=banach+tarski
+banach tarski - Google Search
+https://www.google.com/search?q=banach+tarski&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi1_f6cocf6AhXkpZUCHa9tB7kQ_AUoAXoECAIQAw
+banach tarski - Google Search
+https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox
+Banach–Tarski paradox - Wikipedia
+https://www.youtube.com/watch?v=s86-Z-CbaHA
+The Banach–Tarski Paradox - YouTube
+
+----------------------------------------------------------
+Intro:
+La paradoja de Banach-Tarski en realidad es un teorema. Es un razonamiento válido. Es de tipo geométrico.
+
+Se trata de descomponer una bola (sólida) en finitos pedazos, para luego con los mismos armar dos bolas exactamente iguales a la original. 
+
+Se la llama paradoja únicamete porque es contrario a la intuición que eso se pueda hacer. Sobre todo para el lector no inclinado hacia las matemáticas.
+
+Duplicar una bola símplemente cortándola en pedazos y moviéndola mediante rotaciones y traslaciones sin estirarlas, contraerlas o doblarlas y sin agregar nuevos puntos parece imposible. Pero no hay ningún truco.
+ 
+De hecho la demostración especifica cuales son los pedazos en los que hay que dividir la bola original y como con ellos armar las dos copias.
+
+En un paper publicado el 1924 Stefan Banach y Alfred Tarski dieron una construcción de una descomposición de esa índole.
+
+Com:
+
+Quiero aclarar que las dos copias se arman con los pedazos extraidos de la original. No se agrega nada! Eso es lo que lo vuelve sorprendente. No es como cuando se saca una fotocopia y se agrega papel y toner para poder hacerlo.
+
+Si Ud. está pensando que el autor de esta página se fumó o tomó algo muy fuerte para estar diciendo estas pavadas obviamente imposibles, entoces tiene la actitud correcta y necesaria, aunque en este caso estaría equivocado.
+
+El "secreto" yace en que los pedazos en los que se corta la bola original son conjuntos no medibles (Lebesgue). Lo que signifca que no es posible asignarles volumen de una manera coherente. 
+Esto posibilita que no pueda hacerse la objeción obvia que sería: "Eso no se puede hacer puesto que la suma del volumen de los pedazos sería por una parte igual al volumen de la bola original y por otra seria igual al doble de ese volumen, lo que es absurdo."
+
+
+Dem.:
+Lamentablemente la demostración es un poco técnica como para una mente no matemática(utiliza grupos libres). Pero voy a intentar contar algo.
+
+Voy a seguir los lineamientos que se muestran en el artículo: https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox#A_sketch_of_the_proof
+para tratar de mostrar un bosquejo de la demostración.
+
+Plan: 
+1. Encontrar una descomposición paradógica del grupo libre en dos generadores \(F_2\).
+2. Encontrar un grupo de rotaciones en el espacio tridimensional isomorfo a \(F_2\).
+3. Usar la descomposición paradógica de ese grupo encontrada en el paso 1 para producir una descomposición paradógica de la esfera unitaria (de radio 1) hueca.
+4. Extender la descomposición de la esfera (cáscara) a la bola unitaria sólida.
+
+Paso1:
+El grupo libre \(F_2\) en 2 generadores \(a\) y \(b\) consiste en todas las cadenas (strings) finitas formadas por los 4 símbolos \(a, a^{-1}, b, b^{-1}\) tales que \(a\) no aparece junto a \(a^{-1}\), ni \(b\) junto a \(b^{-1}\). Incluimos aquí la cadena vacía que denotamos con \(e\).
+
+Definimos en \(F_2\) una operación de tal manera que a 2 cadenas les corresponde el resultado de primero concatenarlas en el órden dado y luego para que el resultado vuelva a caer en F2 reducir dicha concatenación eliminando repetidamente los pares \(aa^{-1}, a^{-1}a, bb^{-1}\) y \(b^{-1}b\).
+
+Se puede ver que con esa operación \(F_2\) forma un grupo. https://en.wikipedia.org/wiki/Group_(mathematics)
+
+Denotamos por \(S(a)\) a las cadenas de \(F_2\) que comienzan con a. De manera similar definimos: \(S(a^{−1})\), \(S(b)\) y \(S(b^{−1})\).
+
+Cláramente \(F_2=\{e\} \cup S(a) \cup S(a^{-1}) \cup S(b) \cup S(b{-1})\). Aquí no dice otra cosa que: "\(F_2\) está compuesto de la cadena vacía y de las cadenas que comienzan con cada uno de los cuatro símbolos: \(a, a^{-1}, b, b^{-1}\)."
+
+Pero también: \(F_2=aS(a^{-1}) \cup S(a)\)  y \(F_2=bS(b^{-1}) \cup S(b)\) (donde \(aS(a^{-1})\) significa: todas las cadenas de \(S(a^{-1})\) a las cuales se las concatena con \(a\) al principio y luego se las reduce de manera de eliminar el par \(aa^{-1}\) inicial).
+
+Notemos que al grupo \(F_2\) lo cortamos en cuatro pedazos, entonces desplazamos dos de esos pedazos premultiplicando por \(a\) o \(b\) para luego armarnos dos copias de \(F_2\). Eso es lo que intentamos hacer con la bola maciza y como desplazar partes de \(F_2\) va a corresponder a rotar un pedazo de cascarón esférico ya se deja ver hacia donde vamos.
+
+Paso2:
+Queremos encontrar un subgrupo de las rotaciones del espacio tridimensional que se comporte como \(F_2\).
+
+Para eso basta encontrar dos rotaciones \(A\) y \(B\) que no tengan relaciones entre ellas ni consigo mismas. Lo más fácil es tomar \(A\) y \(B\) como rotaciones alrededor de ejes ortogonales, eso garantizará que no importa cuantas veces aplique \(A\), nunca hará lo mismo que aplicar \(B\) o un múltiplo de \(B\). Análogamente para \(B\). Pero eso no basta, el ángulo rotado por \(A\) o \(B\) debe ser múltiplo irracional de \(\pi\), de otra manera habría una potencia de \(A\) (idem para \(B\)) que daría la identidad. Es decir habría relaciones que no pueden pasar en grupos libres.
+
+Así podemos tomar por ejemplo \( \theta = \arccos(1/3) \), \(A\) la rotación de ángulo \(\theta\) alrededor del eje \(x\) y \(B\) la rotación de ángulo \(\theta\) alrededor del eje \(y\).
+Llamamos \(H\) al subgrupo de rotaciones generado por \(A\) y \(B\). Tendríamos que ver que es libre. Para una idea de como hacerlo ver el artículo citado anteriormente.
+
+Las dos rotaciones \(A\) y \(B\) se comportan de manera idéntica a los elementos \(a\) y \(b\) de \(F_2\) permitiéndonos traducir una cadena de \(F_2\) en una rotación símplemente cambiando \(a\) por \(A\), \(b\) por \(B\) \(a^{-1}\) por \(A^{-1}\) , \(b^{-1}\) por \(B^{-1}\); y viceversa.
+
+De esta manera tenemos una descomposición paradójica de \(H\) (la inducida por la de \(F_2\)).
+
+Paso 3:
+Nuestro grupo \(H\) actúa sobre el cascarón esférico \(S^2\) partiéndolo en órbitas. Dos puntos pertenecen a la misma órbita si y sólo si existe una rotación de \(H\) que manda el primero en el segundo.
+
+Usamos el axioma de elección para elegir un punto de cada órbita y llamamos al conjunto de puntos elegidos \(M\).
+
+La acción de \(H\) sobre una órbita dada es libre y transitiva, y por lo tanto podemos identificarla con \(H\); es decir pensar a cada órbita como una copia de \(H\).
+
+De esta manera cada punto de \(S^2\) se puede alcanzar de una sola manera elegiendo una rotación adecuada de \(H\) y un punto adecuado de \(M\).
+
+Debido a lo anterior una descomposición de \(H\) en subconjuntos nos da una descomposición de \(S^2\).
+
+Así tenemos la siguiente descomposición de \(S^2\): $$\begin{aligned} A_1&=S(a)M \cup M \cup B \\ A_2&=S(a^{-1})M \setminus B \\ A_3&=S(b)M \\ A4&=S(b^{-1})M \end{aligned}$$
+
+donde definimos: \(S(a)M=\{s(x) \mid s \in S(a), x \in M\} \) y análogamente para los demás.
+
+y definimos: \(B=a^{-1}M \cup a^{-2}M \cup \dotsb \)
+
+No se usó ditectamente la descomposición de \(F_2\) porque dejarían a M como parte extra debido a la presencia del elemento neutro \(e\) en ellas.
+
+La mayoría del cascarón esférico fue dividido en cuatro conjuntos cada uno denso en el cascarón. Además cuando se rota a dos de ellos el resultado es el doble de lo que se tenía antes:
+$$\begin{aligned} aA_2&=A_2 \cup A_3 \cup A_4 \\
+bA_4&=A_1 \cup A_2 \cup A_4 \end{aligned}$$
+
+Paso4:
+Finalmente para tener una partición de la bola maciza se une cada punto del cascarón esférico \(S^2\) con el centro de la esfera (sin incluir al centro).
+
+Todavía hay algunos detalles que aclarar: qué pasa con el punto del centro y con los puntos del cascarón esférico que son dejados fijos por alguna rotación de \(H\).
+
+Debido a que cada rotacion de \(H\) deja exactamente dos puntos fijos del cascáron esférico, el conjunto de dichos puntos resulta contable (es decir finito o numerable).
+
+Para eso el artículo original define la noción de equidescomponible y prueba que \(S^2\) es equidescomponible con \(S^2 \setminus D\) donde \(D\) es dicho conjunto contable. No vamos a incluir esto aquí.
+https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox#Some_details,_fleshed_out
+
+
+Video:
+Para una visualización sencilla de lo que está pasando puede verse el video:
+<iframe width="727" height="409" src="https://www.youtube.com/embed/s86-Z-CbaHA" title="The Banach–Tarski Paradox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Si quiere ir a Banach-Tarski directamente puede saltar al minuto 11:30.
+
+
+
+
+
+

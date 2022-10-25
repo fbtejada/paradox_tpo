@@ -1,0 +1,113 @@
+.contact-titulo {
+    /* align-items: center; */
+  /* background-color: #5f9ea0; */
+  /* height: 5rem; */
+  /* position: fixed; */
+  /* width: 100%; */
+  padding-top: 1.5rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  /* z-index: 100; */
+}
+
+.contact-info p{
+  padding-bottom: 0;
+}
+.formulario-error {
+    /* align-items: center; */
+  /* background-color: #989e9e; */
+  /* display: inline; */
+  /* background-color: red; */
+  color: red;
+  /* height: 5rem; */
+  /* position: fixed; */
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  /* overflow: auto; */
+  /* padding-top: 1.5rem; */
+  /* padding-right: 3rem; */
+  /* padding-bottom: 1.5rem; */
+  /* padding-left: 3rem; */
+  /* z-index: 100; */
+}
+
+.contact-formulario {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    /* z-index: 100; */
+}
+ 
+.contact-formulario-text-datos, .contact-formulario-text-mensaje ,
+.contact-formulario-text-confirmacion {
+    width: 100%;
+    /* margin-bottom: ; */
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    z-index: 100;
+}
+.contact-formulario-text-confirmacion input {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.contact-formulario-text-datos select {
+  width: 18.3rem;
+}
+.contact-formulario-text-mensaje textarea {
+  width: 25rem;
+  height: 6rem;
+}
+.contact-formulario-text-button  {
+    background-color: #c4d8d9;
+     height: 10rem;
+     /* position: fixed; */
+     /* width: 100%; */
+     /* margin-bottom: ; */
+     padding-top: 1rem;
+     padding-bottom: 1.5rem;
+     padding-left: 3rem;
+     font-size: 1.5rem;
+ }
+
+
+ .contact-formulario-text-button  :not(span) {
+  margin: .5rem;
+  font-size: 2rem;
+  padding: .2rem;
+  border-radius: 1rem;
+  width: 7rem;
+  height: 3rem;
+  cursor: pointer;
+ }
+
+#enviar:active , #borrar:active {
+  font-size: 1.8rem;
+ }
+
+.contact-formulario-image {
+    padding: 0rem;
+    padding-right: 1.5rem;
+    /* z-index: 100; */
+}
+
+@media (max-width:640px) {
+  .contact-formulario-image {
+      display: none;
+  }
+}
+
+/* Para pisar lo de paradox.css */
+@media (min-width:640px) {
+  /* .paradox-responsive {
+      display: flex;
+      justify-content: space-between;
+  } */
+  .paradox-responsive-image {
+      max-width: 20%;
+      min-width: 20%;
+  }
+}
+
+
+

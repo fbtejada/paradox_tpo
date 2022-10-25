@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 1.7rem;
+    padding-top: 8rem;
+    background-color: #c4d8d9;
+    min-height: 100vh;
+}
+
+main {
+    min-height: calc(100vh - 8rem - 147px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.reference-note :not(li) {
+    font-style: italic;
+}
+
+/* .math {
+    overflow-x: auto;
+    white-space: normal;
+} */
+
+/* Header section */
+/* Tiempo section */
+.weather {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+}
+
+.weather img {
+    max-width: 3rem;
+    display: none;
+}
+.weather.active img {
+    max-width: 3rem;
+    display: flex;
+}
+
+.weather p {
+    display: none;
+}
+
+.weather p.pending, .weather p.error, .weather p.location {
+    display: flex;
+}
+
+.weather.active span.numb, .weather.active span.deg {
+    display: flex;
+}
+
+.weather span.numb, .weather span.deg {
+    display: none;
+}
+
+/* Navigator bar section */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fdfdfe; */
+    background-color: #DDDDDD;
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.logo {
+    width: 4rem;
+    height: auto;
+    /* border-radius: 1rem; */
+    margin-left: 4rem;
+}
+
+.site-name-logo-weather {
+    display: flex;
+    justify-content: space-between;
+    width: 24rem;
+    height: auto;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.site-name-logo {
+    width: 4rem;
+    height: auto;
+    /* border-radius: 1rem; */
+    margin-left: 4rem;
+}
+
+/* .logo{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -60px 0 0 -60px;
+} */
+
+.logo:hover{
+    animation: spin 1.5s linear infinite;
+    transform-origin: 50% 61%;
+ }
+    
+ @keyframes spin {
+     from { 
+            transform: rotate(0deg);
+     }
+     to {    
+             transform: rotate(360deg);
+     }
+   }
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.nav-menu-link:hover {
+    background: linear-gradient(to right, #DDDDDD, #5f9ea0);
+    transition: .5s;
+}
+
+/* Menu hamburguesa */
+.menu-button {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-right: 3rem;
+    /* border: 1px solid white; */
+}
+
+.menu-button-burger {
+    width: 2rem;
+    height: 0.3rem;
+    background: #000000;
+    border-radius: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-button-burger::before,
+.menu-button-burger::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    background: #000000;
+    border-radius: .5rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-button-burger::before {
+    transform: translateY(-0.8rem);
+}
+
+.menu-button-burger::after {
+    transform: translateY(0.8rem);
+}
+
+.menu-button.open .menu-button-burger {
+    transform: translateX(-5rem);
+    background: transparent;
+}
+
+.menu-button.open .menu-button-burger::before {
+    transform: rotate(45deg) translate(3.5rem, -3.5rem);
+}
+
+.menu-button.open .menu-button-burger::after {
+    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+}
+
+
+/* Paradox definition and selection section */
+.paradox-definition {
+    background-color: #c4d8d9;
+    padding: 1.5rem;
+}
+.paradox-definition p {
+    padding: .5rem 0.2rem .5rem;
+
+}
+.paradox-definition h3 {
+    padding: .5rem 0rem .5rem;
+}
+.paradox-definition ul{
+    padding: 0rem 1.5rem 0rem;
+}
+.paradox-definition ul li{
+    padding: .5rem 0rem 0rem;
+}
+
+/* Paradox menu section */
+.paradox-menu {
+    /* max-width: 1200px; */
+    /* width: 95%; */
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: cadetblue;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+}
+.paradox-menu-item-link {
+    text-decoration: none;
+    color: #000000;
+}
+.paradox-menu-item-content {
+    margin: 1rem;
+    padding: 1rem 1rem 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(87, 82, 82, 0.2);
+    background: #ffffff;
+    min-width: 20rem;
+    /* width: 90%; */
+    /* max-width: 25rem; */
+    max-width: 90%;
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1);
+ 
+}
+
+.paradox-menu-item-content img {
+    /* height: 14rem; */
+    width: 100%;
+    margin-bottom: 1rem;
+    
+}
+
+.paradox-menu-item-content h3 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 1rem;
+    height: 4rem;
+}
+
+.paradox-menu-item-content p {
+    font-size: 1.4rem;
+    color: #404040;
+    padding: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+    height: 7rem;
+}
+.paradox-menu-item-content:hover {
+    transition: 1s;
+    transform: scale(.9);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Footer section */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.footer-social-media{
+    padding: 2rem;
+    background: #333333;
+}
+.footer-social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.footer-social-media a:hover {
+    transition: .5s;
+    color: #c8296A;
+}
+.footer-derechos {
+    padding: 2rem;
+    background: #000000;
+    color: #ffffff;
+    
+}
+
+/* Para responsive section */
+@media (min-width:540px) {    
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+/* @media (min-width:640px) {
+    html {
+        font-size: 62.5%;
+    }
+} */
+
+@media (min-width:800px) {
+     .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #BBBBBB;
+        position: fixed;
+        left: 0;
+        top: 8rem;
+        width: 100%;
+        padding: 2rem 0;
+        height: calc(100% - 8rem);
+        overflow-y: auto;
+        left: 100%;
+        transition: left .3s;
+    }
+    .nav-menu-item {
+        margin: 2rem;
+        font-size: 100%
+    }
+    .nav-menu-link {
+        color: #000000;
+    }
+    .nav-menu-link:hover {
+        background: none;
+        color: #5f9ea0;
+    }
+    .menu-button {
+        display: flex;
+    }
+    .nav-menu-visible {
+        left: 0%;
+    }
+}

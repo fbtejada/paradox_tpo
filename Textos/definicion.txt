@@ -1,0 +1,5 @@
+Hay muchas definiciones de paradoja y por lo tanto la palabra paradoja no se refiere a una sola cosa y en algunos casos se la utilizan de manera muy imprecisa.
+Aquí vamos a hablar de paradoja en dos sentidos:
+-Para referirnos a un razonamiento válido pero que es contrario a la intuición y entonces parece imposible o que debe estar mal en alguna parte. Tal es el caso de la paradoja geométrica de Banach-Tarski.
+-Para referirnos a un razonamiento inválido pero que muestre como se llega a una conclusión absurda por medio de pasos intermedios válidos o aparentemente válidos. Tal es el caso de las paradojas de movimiento como las de Zenón.
+

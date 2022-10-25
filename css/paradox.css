@@ -1,0 +1,131 @@
+/* Para la matemática se utiliza TeX o LaTeX que es lo usual 
+en todo el mundo para matemática y física. 
+Y para eso se usa MathJax en este sitio.
+La matemática de MathJax no es responsive.
+Por eso introduje varios puntos de corte en las ecuaciones. 
+No obstante eso algunos celulares hacen un override
+de los seteos de tipo de fuente y tamaño.
+Por eso para prevenir que el sitio se rompa uso "overflow: auto;"
+en las clases paradox-clear y paradox-dark.
+Pero no se utiliza en la mayoría de los dispositivos.
+Es sólo una precaución.
+Lo ideal sería que MathJax fuera totalmente responsive.
+La alternativa sería usar MathML pero es muy limitado comparado con TeX*/
+
+/* .MathJax {
+    font-size: 1.7rem !important;
+} */
+
+.MathJax_Display { 
+    text-align: left !important;
+    display: inline !important;
+    
+}
+.nombre-cientifico {
+    font-style: italic;
+}
+.paradox-clear {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #c4d8d9;
+    /* height: 5rem; */
+    /* position: fixed; */
+     padding: 1.5rem;
+     overflow: auto;   
+    /* z-index: 100; */
+}
+.paradox-clear-image {
+    /* width: 25%; */
+    max-width: 100%;
+}
+.paradox-clear-text p, .paradox-clear-text h4 {
+    padding: .5rem .5rem .5rem;
+}
+.paradox-clear-text ul , .paradox-clear-text ol {
+    padding: 0rem 3rem 0rem;
+}
+.paradox-clear-text li {
+    padding: .5rem 0rem 0rem;
+}
+.paradox-clear a {
+    /* color: rgb(10, 73, 73); */
+    color: darkblue;
+}
+
+.paradox-dark {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #5f9ea0;
+    /* height: 5rem; */
+    /* position: fixed; */
+    /* width: 100%; */
+    padding: 1.5rem;
+    overflow: auto;
+    /* z-index: 100; */
+}
+.paradox-dark-image {
+    /* width: 25%; */
+    max-width: 100%;
+}
+.paradox-dark-text p, .paradox-dark-text h4 {
+    padding: .5rem .5rem .5rem;
+}
+.paradox-dark-text ul , .paradox-dark-text ol {
+    padding: 0rem 3rem 0rem;
+}
+.paradox-dark-text li {
+    padding: .5rem 0rem 0rem;
+}
+.paradox-dark a {
+    /* color: rgb(229, 238, 236); */
+    color: darkblue;
+}
+
+.paradox-videos {
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+    /* background-color: #5f9ea0; */
+    /* height: 5rem; */
+    /* position: fixed; */
+    width: 100%;
+    padding: 1.5rem;
+     /* z-index: 100; */
+}
+
+.paradox-videos-text p {
+    padding: .5rem 0.5rem .5rem;
+}
+.paradox-videos-div-iframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width:700px) {
+    .paradox-responsive {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .paradox-responsive-image {
+        max-width: 30%;
+        min-width: 30%;
+    }
+}

@@ -1,0 +1,30 @@
+Introducción:
+La paradoja de Peto es una paradoja biológica cuyo nombre se debe al epidemiólogo y estadístico inglés Richard Peto quien la planteó por primera vez en 1977 mientras estudiaba la formación de tumores en ratones.
+       Teniendo en cuenta que todos los seres vivos portamos ADN en las células que nos conforman, el sentido común nos lleva a pensar que organismos con mayor cantidad de células y esperanza de vida, tendrán mayor probabilidad de acumular cambios en el ADN durante las divisiones celulares a lo largo de su vida. Eso llevaría a una o más células a crecer y proliferar descontroladamente, proceso que da lugar a la formación de tumores. Sin embargo, a pesar del riesgo teórico que existe, el cáncer no es la principal causa de muerte en esos organismos. ¿Cómo puede ser?
+
+
+ Comentarios:
+Antes de buscar la respuesta podemos pensar en factores que contribuyen a una mayor esperanza de vida. Uno de ellos es el metabolismo. Se sabe que animales más longevos, tienen un metabolismo mucho más lento, menor demanda energética y sus tejidos sufren menos daños. Sin embargo eso sucede en animales tan grandes como las tortugas de las Galápagos (Geochelone nigrao) y tan pequeñas como la ostra perlífera (Margaritifera margaritifera) así que no sería este el caso. 
+
+Solución:
+A partir de un estudio realizado en 2015 en necropsias de animales que variaban en un amplio rango de tamaño y esperanza de vida, se demostró que aquella idea inicial no guardaba relación con los datos obtenidos.En otros estudios realizados en elefantes y ballenas también observaron que son menos propensos a contraer cáncer si se los compara con el ser humano u otros animales de menor tamaño y longevidad. Por ejemplo, en los elefantes encontraron genes con la información para la síntesis de proteínas supresoras de tumores como la p53 de la que tienen ¡al menos veinte copias! mientras que el ser humano solo cuenta con dos copias. Estudios realizados sobre el genoma de la ballena de Groenlandia (Balaena mysticetus) sugiere que poseen defensas efectivas contra el desarrollo de tumores. Estos mecanismos parecen haberse seleccionado a lo largo de la hirstoria evolutiva de estas especies contradiciendo lo esperado y de ahí que se plantee la paradoja. 
+Cabe preguntarnos si la información que se viene recabando podrá ayudar a encontrar nuevas estrategias destinadas a la prevención y/o tratamiento del cáncer en humanos que permita aumentar la calidad y expectativa de vida.
+
+ <ol class="reference-note">
+            <li id="cite_note-1"> <span class="reference-text"><a class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2024769/" target="_blank" rel="noopener">Cancer and ageing in mice and men</a></span></li>
+           <li id="cite_note-2"> <span class="reference-text"><a class="external text" href="https://kripkit.com/paradoja-de-pedo/" target="_blank" rel="noopener"> 
+            <li id="cite_note-3"> <span class="reference-text"><a class="external text" href="https://jamanetwork.com/journals/jama/fullarticle/2456041" target="_blank" rel="noopener"> https://jamanetwork.com/journals/jama/fullarticle/2456041</a></span></li>
+            <li id="cite_note-4"> <span class="reference-text"><a class="external text" href="https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msz099/5485251" target="_blank" rel="noopener"> Return to the Sea, Get Huge, Beat Cancer.(Regresar al mar, volverse enorme, derrotar al cáncer)</a></span></li> 
+            <li id="cite_note-6"> <span class="reference-text"><a class="external text" href="https://www.sciencedaily.com/releases/2013/07/130731093255.htm" target="_blank" rel="noopener">https://www.sciencedaily.com/releases/2013/07/130731093255.htm</a></span></li>
+
+</ol>
+             
+                Respondiendo a la pregunta inicial, en la ilustración de la paradoja de Peto se observa que la tasa de cáncer esperada para especies grandes y/o longevas es más alta que para especies más pequeñas y de vida corta. 
+                  <ul>
+                       <li>La línea roja continua indica una relación lineal entre la tasa de cáncer y (esperanza de vida x masa corporal)</li>
+                       <li>La línea roja discontinua representa una aproximación de la tasa de cáncer esperada asumiendo un modelo que describe la probabilidad de que un individuo desarrolle cáncer colorrectal después de un número determinado de años. </li>            
+                        <li>La línea azul sólida representa la observación de que no existe una relación entre el riesgo de cáncer y (masa corporal)*(vida útil)</li>
+                       <li>Se encontró cáncer metastásico en un dinosaurio con pico de pato lo que sugiere que el cáncer era lo suficientemente común en ese linaje como para conservarse en el registro fósil, pero no en otras especies de dinosaurios grandes. Si bien la masa corporal adulta es aproximadamente la misma para el dinosaurio y el elefante, se cree que los dinosaurios con pico de pato tuvieron una vida más corta. Esto sugiere que las compensaciones entre la reproducción y el crecimiento y los mecanismos de defensa contra el cáncer dejaron a estos dinosaurios más susceptibles al cáncer que los elefantes.</li>
+                    </ul>
+              
+
