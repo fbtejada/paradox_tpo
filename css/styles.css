@@ -263,7 +263,7 @@ a {
     min-width: 20rem;
     /* width: 90%; */
     /* max-width: 25rem; */
-    max-width: 90%;
+    /* max-width: 90%; */
     cursor: pointer;
     transition: 1s;
     transform: scale(1);
