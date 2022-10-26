@@ -1,6 +1,10 @@
 # Entrega TPO FS-Python Frontend (HTML, CSS, JS)
 
-[URL](https://fbtejada.github.io/paradox_tpo/) navegable.
+## URL navegable
+
+https://fbtejada.github.io/paradox_tpo/
+
+![QR](images/paradox_tpo_QR.png)
 
 ## Paradox
 
