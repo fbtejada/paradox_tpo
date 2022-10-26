@@ -77,6 +77,7 @@ No la vimos últimamente en clase.
 
 Desarrollamos bastante el contenido nosotros mismos, pero no quisiéramos que salga al público porque todavía es muy preliminar y puede no ser adecuado para el público general.
 Una vez autorizada la geolocalización se debe esperar un rato para que esto suceda y recién ahí se consulte y muestre la temperatura y el estado del tiempo. 
+El logo es un link a index.html para facilitar la navegación en dispositivos móviles.
 Incluyo a continuación el comentario al principio de paradox.css sobre la responsividad de la matemática incluida.
 Muchas gracias por todo JP!
 
@@ -86,7 +87,7 @@ Para la matemática se utiliza TeX o LaTeX que es lo usual en todo el mundo para
 Y para eso se usa MathJax en este sitio.
 La matemática de MathJax no es responsive.
 Por eso introduje varios puntos de corte en las ecuaciones. 
-No obstante eso algunos celulares hacen un override de los seteos de tipo de fuente y tamaño.
+No obstante eso, algunos celulares hacen un override de los seteos de tipo de fuente y tamaño.
 Por eso para prevenir que el sitio se rompa uso "overflow: auto;" en las clases paradox-clear y paradox-dark.
 Pero no se utiliza en la mayoría de los dispositivos.
 Es sólo una precaución.
