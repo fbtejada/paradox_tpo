@@ -39,7 +39,7 @@ Pudimos hacerla, el código se encuentra en un archivo .JS aparte.
 
 ## ¿En qué página/s utilizaron iframes? *
 
-banach-tarski.html
+*banach-tarski.html*
 
 ## ¿En qué página/s utilizaron íconos (FontAwesome u otros)? *
 
@@ -51,7 +51,7 @@ Fuentes de Google.
 
 ## ¿Qué páginas son responsivas? Indicar nombre o "todas" *
 
-Todas. Salvo por un detalle que se usó TeX para la matemática y MathJax no es responsivo. Está explicado en comentario al principio de paradox.css (incluyo este comentario al final del Readme).
+Todas. Salvo por un detalle que se usó TeX para la matemática y MathJax no es responsivo. Está explicado en comentario al principio de **paradox.css** (incluyo este comentario al final del Readme).
 
 ## Ubicación y descripción breve de la animación, transformación o transición utilizada *
 
@@ -65,7 +65,7 @@ Flexbox y Grid.
 
 ## ¿Qué páginas fueron maquetadas? Indicar nombre o "todas". En caso de no haber maquetado escribir un "-" *
 
-Todas: index.html con grid y flex para las cards y resto ﬂex. Las demás páginas con ﬂex.
+Todas: **index.html** con grid y flex para las cards y resto ﬂex. Las demás páginas con ﬂex.
 
 ## En el caso de que el TPO haya sido realizado de a 2 o de manera individual especiﬁcar el motivo.
 
@@ -77,8 +77,8 @@ No la vimos últimamente en clase.
 
 Desarrollamos bastante el contenido nosotros mismos, pero no quisiéramos que salga al público porque todavía es muy preliminar y puede no ser adecuado para el público general.
 Una vez autorizada la geolocalización se debe esperar un rato para que esto suceda y recién ahí se consulte y muestre la temperatura y el estado del tiempo. 
-El logo es un link a index.html para facilitar la navegación en dispositivos móviles.
-Incluyo a continuación el comentario al principio de paradox.css sobre la responsividad de la matemática incluida.
+El logo es un link a **index.html** para facilitar la navegación en dispositivos móviles.
+Incluyo a continuación el comentario al principio de **paradox.css** sobre la responsividad de la matemática incluida.
 Muchas gracias por todo JP!
 
 ## Sobre la responsividad de la matemática includa
