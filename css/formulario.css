@@ -95,6 +95,10 @@
   .contact-formulario-image {
       display: none;
   }
+  .contact-formulario {
+    padding-left: 0rem;
+    /* z-index: 100; */
+}
 }
 
 /* Para pisar lo de paradox.css */
