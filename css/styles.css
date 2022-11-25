@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto';
     font-size: 1.7rem;
     padding-top: 8rem;
+    color:#000000;
     background-color: #c4d8d9;
     min-height: 100vh;
 }
