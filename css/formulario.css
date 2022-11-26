@@ -38,7 +38,12 @@
     padding-left: 3rem;
     /* z-index: 100; */
 }
- 
+
+/* Workarround IOS Iphone User agent: color: -apple-system-blue; */
+#contact-formulario{
+  color: #000000;
+}
+
 .contact-formulario-text-datos, .contact-formulario-text-mensaje ,
 .contact-formulario-text-confirmacion {
     width: 100%;
