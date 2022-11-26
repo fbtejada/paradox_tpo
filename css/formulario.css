@@ -40,7 +40,7 @@
 }
 
 /* Workarround IOS Iphone User agent: color: -apple-system-blue; */
-#contact-formulario{
+#enviar, #borrar, #country {
   color: #000000;
 }
 
