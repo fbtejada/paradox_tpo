@@ -265,6 +265,7 @@ a {
     /* width: 90%; */
     /* max-width: 25rem; */
     /* max-width: 90%; */
+    max-width: 476px; /*Nadie es mas grande que las imágenes*/
     cursor: pointer;
     transition: 1s;
     transform: scale(1);
